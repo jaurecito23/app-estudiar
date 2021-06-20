@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel='stylesheet'>
+    <link href="css.css" rel='stylesheet'>
+    <link href="crear.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:ital,wght@0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>App Estudiar</title>
+</head>
+<body>
+    
+    <header class='header'>  
+            <div class='contenido__header'>
+                <h1 class='header--titulo'>App-Estudiar!</h1>
+                <h2 class='header--subtitulo'> No te rindas </h2>
+                <p class='header--fecha'> Fecha: <span> 13/14/2021 </span></p>
+                <p class='header--examenes-hoy'>Examenes para Hoy: <span>1</span></p>
+                <p class='header--examenes-restantes'>Examenes Restantes: <span>22</span></p>
+            </div>    
+    </header>
+
+    <nav class='navegacion'>   
+        <div class='navegacion__boton'> 
+            <!-- <li class="nav--boton"> > </li> -->
+        <a  class='nav--boton' href="crear.html">Crear</a> 
+        <a class='nav--boton' href='cuestionarios.html'> Ver Cuestionarios</a>
+        <a  class="nav--boton" href="buscar.html">Buscar</a>
+        <a class='nav--boton' href="historial.html">Historial</a>
+        </div>       
+    </nav>
+
+
+    <section class='section__crear'>
+        <div class='contenedor__form'>
+            <form class="formulario__crear">
+                <h3> Crea un Nuevo Cuestionario </h3>
+                <fieldset>
+                    <legend class='formulario--legend'> Datos Generales </legend>
+                    <div class='formulario--campo'>
+                        <label for='nombre'>Nombre</label>
+                        <input type='text' id='nombre' placeholder="Ej: Matematiquiando">
+                    </div>
+                    <div class='formulario--campo'>
+                        <label for='fecha'>Fecha</label>
+                        <input type='date' id='fecha' placeholder="Ej: 06/01/2002">
+                    </div>
+                    <div class='formulario--campo'>
+                        <label for='imagen'>Imagen</label>
+                        <input type='file' id='imagen' placeholder="Ej: Matematiquiando">
+                    </div>
+                    
+                    <div class='formulario--campo'>
+                        <label for='descripcion'>Descripcion</label>
+                       <textarea id='descripcion' name='descripcion'></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario--legend">Cuestionario</legend>
+                <div class='div-preguntas'>
+                    
+                    <div class='pregunta1'>
+                        <div class="formulario--campo">
+                            <label class='pregunta' for='pregunta 1'> Pregunta 1 </label>  
+                            <input id='pregunta 1' name='pregunta1' type='text' placeholder="Pregunta 1">  
+                        </div>
+                     
+                        <div  class="formulario--campo">
+                            <div class='respuestas'>
+                                <div class="respuesta">
+                                    <label> Respuesta 1 </label>
+                                    <input name="respuesta1" type='text' id="respuesta1" placeholder="Respuesta1"> 
+                                </div>
+                            </div>
+                            <button class='boton-agregar-respuesta boton--naranja'> Agregar Respuesta + </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <button class='boton-agregar-pregunta boton--amarillo'> Agregar Pregunta + </button>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="contenedor__tabla" >
+            <table class="tabla__examenes">
+                <thead class='tabla--head'>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Tematica</td>
+                        <td>Fecha</td>
+                        <td>Ver</td>
+                       
+                    </tr>
+                </thead>
+
+                <tbody class='tabla--body'>
+                    <tr> 
+                        <td> Matematiquiando </td>
+                        <td> Matematicas </td>
+                        <td> 19/6/2021 </td>
+                        <td> <button class='boton--naranja'>Ver</button></td>
+                    </tr>
+                    <tr> 
+                        <td> Fisiquiando </td>
+                        <td> Fisica </td>
+                        <td> 19/6/2021 </td>
+                        <td> <button class="boton--naranja">Ver</button></td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </section>
+
+
+    <footer class='footer'>
+        <h4> Todos los derechos Reservados<br> --Facundo Jauregui--</h4>
+    </footer>
+
+    <script src='script.js'></script>
+    <script src='crear.js'></script>
+</body>
+</html>

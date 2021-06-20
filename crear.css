@@ -1,0 +1,98 @@
+.section__crear{
+
+    width: 100%;
+    margin: 0rem auto 0rem auto;
+    display: block;
+    padding: 0rem .1rem;
+}
+
+.contenedor__form{
+    margin: auto;
+    
+}
+
+.formulario__crear{
+    width: 100%;
+    background-color: var(--amarillo);
+    padding: .8rem .4rem;
+    margin: auto;
+    padding: 2rem .2rem;
+}
+
+.formulario__crear h3{
+
+    font-size: 1.6rem;
+    color: var(--gris-oscuro);
+    text-align: center;
+
+}
+
+.formulario__crear fieldset{
+
+    width: 90%;
+    margin: 2rem auto;
+
+}
+
+.formulario--legend{
+
+  font-size: 1.2rem;  
+  text-align: center;
+  color: var(--gris-muy-oscuro);
+  text-decoration: underline;
+
+}
+
+
+.formulario--campo{
+
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--gris-oscuro)
+}
+
+.formulario--campo input{
+
+    height: 2rem;
+
+}
+
+.formulario--campo button{
+
+    margin-top: 1rem;
+
+}
+
+@media (min-width: 760px){
+
+    .section__crear{
+
+        width: 65%;
+        margin-top: -1.1rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        column-gap: 2rem;
+    }
+
+    .contenedor__form{
+
+        margin-top: 3rem;
+    }
+  
+
+}
+
+.respuesta{
+
+    margin-top: 1rem;
+
+}
+
+.pregunta{
+
+    color: var(--gris-muy-oscuro);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}

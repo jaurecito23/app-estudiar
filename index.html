@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel='stylesheet'>
+    <link href="css.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:ital,wght@0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>App Estudiar</title>
+</head>
+<body>
+    
+    <header class='header'>  
+            <div class='contenido__header'>
+                <h1 class='header--titulo'>App-Estudiar!</h1>
+                <h2 class='header--subtitulo'> No te rindas </h2>
+                <p class='header--fecha'> Fecha: <span> 13/14/2021 </span></p>
+                <p class='header--examenes-hoy'>Examenes para Hoy: <span>1</span></p>
+                <p class='header--examenes-restantes'>Examenes Restantes: <span>22</span></p>
+            </div>    
+    </header>
+
+    <nav class='navegacion'>   
+        <div class='navegacion__boton'> 
+            <!-- <li class="nav--boton"> > </li> -->
+        <a  class='nav--boton' href="crear.html">Crear</a> 
+        <a class='nav--boton' href='cuestionarios.html'> Ver Cuestionarios</a>
+        <a  class="nav--boton" href="buscar.html">Buscar</a>
+        <a class='nav--boton' href="historial.html">Historial</a>
+        </div>       
+    </nav>
+
+    <section>
+
+        <main class='main__principal'>
+            <div class='contenedor__ordenar'>
+                <div class='ordenar--boton'>
+                    <button class="boton--amarillo"> Ordenar Por </button>                    
+                </div>
+                <div class='ordenar--opciones'>
+                    
+                        <button class=" oculto boton--naranja ordenar--opcion"> Fecha </button>
+                        <button class=" oculto boton--naranja ordenar--opcion"> Nombre </button>
+                        <button class=" oculto boton--naranja ordenar--opcion"> Sin Hacer  </button>
+                    
+                </div>
+            </div>
+
+          
+                <div class="contenedor__tabla" >
+                    <table class="tabla__examenes">
+                        <thead class='tabla--head'>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Tematica</td>
+                                <td>Fecha</td>
+                                <td>Ver</td>
+                               
+                            </tr>
+                        </thead>
+
+                        <tbody class='tabla--body'>
+                            <tr> 
+                                <td> Matematiquiando </td>
+                                <td> Matematicas </td>
+                                <td> 19/6/2021 </td>
+                                <td> <button class='boton--naranja'>Ver</button></td>
+                            </tr>
+                            <tr> 
+                                <td> Fisiquiando </td>
+                                <td> Fisica </td>
+                                <td> 19/6/2021 </td>
+                                <td> <button class="boton--naranja">Ver</button></td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+        
+        </main>
+        <section class='contenedor__tarjetas'>
+            
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+            <article class='contenedor__tarjeta'>
+                <div class='tarjeta__examen'>
+                    <div class='tarjeta--principal'>
+                        <div class='tarjeta--imagen'>
+                            <img src='img/javascript.jpg'>
+                        </div>
+                        <h3 > Examen de <span>Javascript</span></h3>
+                    </div>
+                     <div class='tarjeta--descripcion'>
+                        <p> <span> Descripcion: </span><br><br> Esto es un examen para reforzar 
+                        mis conocimientos en Javascript </p>
+                     </div>
+
+                     <div class='tarjeta--botones'>
+                        <button class='boton--naranja'>Ver</button>
+                        <button class='boton--amarillo'>Realizar</button>
+                     </div>
+                </div>
+            </article>
+        
+        </section>
+    </section>
+
+    <footer class='footer'>
+        <h4> Todos los derechos Reservados<br> --Facundo Jauregui--</h4>
+    </footer>
+
+    <script src='script.js'> </script>
+</body>
+</html>
